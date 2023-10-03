@@ -9,7 +9,7 @@ import pageobjects.pages.components.TableWithRegistrationResultComponent;
 import static io.qameta.allure.Allure.step;
 
 @DisplayName("Student registration form test")
-public class StudentRegistrationFormTest extends TestBase{
+public class StudentRegistrationFormTest extends TestBase {
     public String firstName = "Petr";
     public String lastName = "Petrov";
     public String email = "Pert@mail.com";
@@ -32,14 +32,14 @@ public class StudentRegistrationFormTest extends TestBase{
     @Test
     @Tag("remote")
     @DisplayName("Successful registration")
-    void successfulRegistrationWithRequiredFieldsTest()  {
-        step("Opening a web page", () ->{
-                    studentRegistrationForm
-                            .openPage()
-                            .checkThatTheSiteHasOpened()
-                            .closeBanners();
-                });
-        step("Filling in required fields", () ->{
+    void successfulRegistrationWithRequiredFieldsTest() {
+        step("Opening a web page", () -> {
+            studentRegistrationForm
+                    .openPage()
+                    .checkThatTheSiteHasOpened()
+                    .closeBanners();
+        });
+        step("Filling in required fields", () -> {
             studentRegistrationForm
                     .setRequiredFields(firstName,
                             lastName,
@@ -50,7 +50,7 @@ public class StudentRegistrationFormTest extends TestBase{
                             year)
                     .clickSubmit();
         });
-        step("Checking completed fields", () ->{
+        step("Checking completed fields", () -> {
             tableWithRegistrationResultComponent
                     .checkThatTheTableHasOpened()
                     .checkResultRequiredFields(firstName,
@@ -68,13 +68,13 @@ public class StudentRegistrationFormTest extends TestBase{
     @Tag("remote")
     @DisplayName("Successful registration with all fields")
     void successfulRegistrationWithAllFieldsTest() {
-        step("Opening a web page", () ->{
+        step("Opening a web page", () -> {
             studentRegistrationForm
                     .openPage()
                     .checkThatTheSiteHasOpened()
                     .closeBanners();
         });
-        step("Filling in all fields", () ->{
+        step("Filling in all fields", () -> {
             studentRegistrationForm
                     .setAllFields(firstName,
                             lastName,
@@ -92,7 +92,7 @@ public class StudentRegistrationFormTest extends TestBase{
                             selectCity)
                     .clickSubmit();
         });
-        step("Checking completed fields", () ->{
+        step("Checking completed fields", () -> {
             tableWithRegistrationResultComponent
                     .checkThatTheTableHasOpened()
                     .checkResultAllFields(firstName,
