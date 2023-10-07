@@ -39,16 +39,19 @@ tasks.withType(JavaCompile) {
 }
 
 test {
+    systemProperties(System.getProperties())
     useJUnitPlatform()
 }
 
 task smoke_test(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform{
         includeTags("smoke")
     }
 }
 
 task all_test(type: Test) {
+    systemProperties(System.getProperties())
     useJUnitPlatform{
         includeTags("all_tests")
     }
