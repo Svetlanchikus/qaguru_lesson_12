@@ -21,7 +21,9 @@ public class TestBase {
         String serverCreds = System.getProperty("serverCreds");
 
         Configuration.baseUrl = "https://demoqa.com";
-        Configuration.browserSize = "1920x1080";
+        Configuration.browser = System.getProperty("browser");
+        Configuration.browserVersion = System.getProperty("browserVersion");
+        Configuration.browserSize = System.getProperty("browserSize");
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://" + serverCreds + browserServer +"/wd/hub";
 
