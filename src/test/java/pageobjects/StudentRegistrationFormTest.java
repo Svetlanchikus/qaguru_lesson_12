@@ -31,6 +31,7 @@ public class StudentRegistrationFormTest extends TestBase {
 
     @Test
     @Tag("smoke")
+    @Tag("all_tests")
     @DisplayName("Successful registration")
     void successfulRegistrationWithRequiredFieldsTest() {
         step("Opening a web page", () -> {
