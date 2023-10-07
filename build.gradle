@@ -42,8 +42,14 @@ test {
     useJUnitPlatform()
 }
 
-task remote_test(type: Test) {
+task smoke_test(type: Test) {
     useJUnitPlatform{
-        includeTags("remote")
+        includeTags("smoke")
+    }
+}
+
+task all_test(type: Test) {
+    useJUnitPlatform{
+        includeTags("all_tests")
     }
 }

@@ -30,7 +30,7 @@ public class StudentRegistrationFormTest extends TestBase {
 
 
     @Test
-    @Tag("remote")
+    @Tag("smoke")
     @DisplayName("Successful registration")
     void successfulRegistrationWithRequiredFieldsTest() {
         step("Opening a web page", () -> {
@@ -65,7 +65,7 @@ public class StudentRegistrationFormTest extends TestBase {
     }
 
     @Test
-    @Tag("remote")
+    @Tag("all_tests")
     @DisplayName("Successful registration with all fields")
     void successfulRegistrationWithAllFieldsTest() {
         step("Opening a web page", () -> {
