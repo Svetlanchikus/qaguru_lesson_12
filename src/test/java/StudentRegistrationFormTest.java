@@ -1,10 +1,9 @@
-package pageobjects;
-
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import pageobjects.pages.StudentRegistrationFormPage;
-import pageobjects.pages.components.TableWithRegistrationResultComponent;
+import helpers.TestBase;
+import pages.StudentRegistrationFormPage;
+import pages.components.TableWithRegistrationResultComponent;
 
 import static io.qameta.allure.Allure.step;
 

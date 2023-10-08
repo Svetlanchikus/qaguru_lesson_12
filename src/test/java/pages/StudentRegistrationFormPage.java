@@ -1,8 +1,8 @@
-package pageobjects.pages;
+package pages;
 
 import com.codeborne.selenide.SelenideElement;
-import pageobjects.pages.components.CalendarComponent;
-import pageobjects.pages.components.TableWithRegistrationResultComponent;
+import pages.components.CalendarComponent;
+import pages.components.TableWithRegistrationResultComponent;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.byText;
