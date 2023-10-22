@@ -1,7 +1,8 @@
+package tests;
+
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import helpers.TestBase;
 import pages.StudentRegistrationFormPage;
 import pages.components.TableWithRegistrationResultComponent;
 
